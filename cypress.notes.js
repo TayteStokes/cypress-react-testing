@@ -28,3 +28,8 @@ describe('my first test', () => {
     // take an action on the element (click)
 // Assert - Make an assertion
     // make an assertion of what to expect
+
+// We can access cypress commands through the global 'cy' object
+
+// Cypress will use selectors to access the elements of the page
+// Once we select a node we are able to perform actions and make assertions on the element
