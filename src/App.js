@@ -1,4 +1,6 @@
 import React from 'react';
+import 'reset-css';
+import './App.css';
 
 class App extends React.Component {
   // State
@@ -42,8 +44,7 @@ class App extends React.Component {
 
 
     return (
-      <div>
-        <h1>Another Todo List... Yay</h1>
+      <div className="app-container">
         <div className="todo-list-container">
           {mappedTodos}
         </div>

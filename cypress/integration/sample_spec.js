@@ -27,4 +27,14 @@ describe('todo app test', () => {
             .contains('add')
             .click()
     });
+
+    it('should remove the todo cypress added', () => {
+        // first visit the page
+        cy.visit('http://localhost:3000');
+        // get the last todo in  the list
+        cy.get('.todo-list-container')
+            .last()
+            .contains('done')
+            .click()
+    })
 });
